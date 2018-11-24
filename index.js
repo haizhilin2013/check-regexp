@@ -46,8 +46,8 @@ function emailRegexp (value) {
  */
 function codeRegexp (value, sw = false) {
   return sw
-    ? NUMBER_CODE_REGEXP.test(value)
-    : CODE_REGEXP.test(value)
+    ? CODE_REGEXP.test(value)
+    : NUMBER_CODE_REGEXP.test(value)
 }
 
 /**
