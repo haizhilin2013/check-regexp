@@ -3,7 +3,7 @@
  * @constant
  * @type {RegExp}
  */
-const PHONE_REGEXP = /^1\d{10}$/
+const PHONE_REGEXP = /^1[34578]\d{9}$/
 /**
  * 邮箱正则表达式
  * @constant
@@ -31,7 +31,7 @@ const CODE_REGEXP = /^([a-zA-Z0-9]{4}|[a-zA-Z0-9]{6})$/
 const CHINESE_REGEXP = /[\u4E00-\u9FA5]/
 
 /**
- * 用户名正则表达式(仅支持字母数字下划线减号)
+ * 用户名正则表达式(仅支持字母数字下划线减号)(6~18位)
  * @constant
  * @type {RegExp}
  */
@@ -42,7 +42,7 @@ const USER_NAME_REGEXP = /^[a-zA-Z0-9_-]{6,18}$/
  * @constant
  * @type {RegExp}
  */
-const DAWK_REGEXP = /^[1-9]{1}\d{5}$/
+const POSTAL_CODE_REGEXP = /^[1-9]{1}\d{5}$/
 
 /**
  * 身份证正则表达式
@@ -58,13 +58,13 @@ const ID_CARD_REGEXP = /^[1-9]{1}\d{5}(18|19|20)\d{2}((0[1-9])|(1[0-2]))(([0-2][
  */
 const BANK_CARD_REGEXP = /^([1-9]{1})(\d{15}|\d{18})$/
 
-module.exports = {
+export {
   PHONE_REGEXP,
   EMAIL_REGEXP,
   NUMBER_CODE_REGEXP,
   CODE_REGEXP,
   CHINESE_REGEXP,
-  DAWK_REGEXP,
+  POSTAL_CODE_REGEXP,
   USER_NAME_REGEXP,
   ID_CARD_REGEXP,
   BANK_CARD_REGEXP
